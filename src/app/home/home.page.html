@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title id="tt">
+      IMC
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">IMC</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <B></B>
+  <h3>Digite a Sua Altura</h3>
+  <ion-input color="primary" id="altura" [(ngModel)]='altura' type="number" ></ion-input>
+  <b></b>
+  <h3>Digite o Seu Peso</h3>
+  <ion-input color="primary" id='peso' [(ngModel)]='peso' type="number" ></ion-input>
+  <b></b>
+  <ion-button  expand="full" color="success" (click)="cal()" >Calcular</ion-button>
+  <br>
+  <div id="resultado">
+  <ion-label>O Seu Peso é {{res}}  </ion-label>
+  <br>
+</div>
+  
+
+</ion-content>
