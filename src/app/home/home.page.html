@@ -14,10 +14,10 @@
   </ion-header>
   <B></B>
   <h3>Digite a Sua Altura</h3>
-  <ion-input color="primary" id="altura" [(ngModel)]='altura' type="number" ></ion-input>
+  <ion-input color="primary" id="altura" [(ngModel)]='altura' type="number" min="100" max="250" ></ion-input>
   <b></b>
   <h3>Digite o Seu Peso</h3>
-  <ion-input color="primary" id='peso' [(ngModel)]='peso' type="number" ></ion-input>
+  <ion-input color="primary" id='peso' [(ngModel)]='peso' type="number" min="5" max="250" ></ion-input>
   <b></b>
   <ion-button  expand="full" color="success" (click)="cal()" >Calcular</ion-button>
   <br>

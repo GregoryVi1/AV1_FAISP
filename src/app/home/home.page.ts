@@ -15,21 +15,19 @@ export class HomePage {
   res;
   
   cal(){
-     this.imc = this.peso / (this.altura * this.altura);
-     console.log(this.imc);
+     this.imc = (this.peso / (this.altura * this.altura)).toFixed(2);
+     this.altura / 100;
 
-    if (this.imc >= 18.5 && this.imc <= 24.9 ) {
+    if ((this.imc >= 18.5 ) && (this.imc <= 24.9 )) {
         return this.res = ('normal');
     }
-      else if (this.imc >= 25 && this.imc <= 29.9)  {
+      else if ((this.imc >= 25) && (this.imc <= 29.9))  {
         return this.res = ("Sobrepeso");
     }
       else if ( this.imc >= 30 ) {
         return this.res = ("Obesidade");
     }
-      else if (this.imc >= 40) {
-        return this.res = ("Obesidade Grave");
+      else{
+        return this.res = ("Obesidade Grave")
     }}}
-    
-  
 
